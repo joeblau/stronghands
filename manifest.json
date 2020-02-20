@@ -1,0 +1,14 @@
+  {
+    "name": "Strong Hands",
+    "version": "1.0",
+    "description": "Disable emergency end staking",
+    "permissions": ["activeTab", "*://go.hex.win/stake/*"],
+    "content_scripts": [
+      {
+        "matches": ["*://go.hex.win/stake/*"],
+        "js": ["stronghands.js"]
+      }
+    ],
+    "manifest_version": 2
+  }
+
